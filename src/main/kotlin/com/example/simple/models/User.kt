@@ -9,11 +9,12 @@ class User {
     @GeneratedValue
     var id: Long? = null
     var userName: String? = null
-    var email: String? = null
+    var userEmail: String? = null
+    var userType: String? = null
+    var userRating: Double? = null
+    var userDescription: String? = null
 
-    @OneToOne(cascade = [CascadeType.ALL])
-    var gCharacter: GCharacter? = null
-
-
+    @OneToMany
+    var userComments: Set<Comment>? = null
 
 }

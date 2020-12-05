@@ -1,6 +1,6 @@
 package com.example.simple.repositories
 
-import com.example.simple.models.GRoom
+import com.example.simple.models.Comment
 import org.springframework.data.repository.CrudRepository
 
-interface RoomRepository: CrudRepository<GRoom, Long>
+interface CommentRepository: CrudRepository<Comment, Long>
