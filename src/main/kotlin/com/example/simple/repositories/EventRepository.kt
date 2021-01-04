@@ -1,6 +1,6 @@
 package com.example.simple.repositories
 
-import com.example.simple.models.OEvent
+import com.example.simple.models.Event
 import org.springframework.data.repository.CrudRepository
 
-interface EventRepository: CrudRepository<OEvent, Long>
+interface EventRepository: CrudRepository<Event, Long>

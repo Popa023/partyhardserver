@@ -14,6 +14,7 @@ class UserController {
     @Autowired
     private val repository: UserRepository? = null
 
+    @CrossOrigin
     @GetMapping("/getAll")
     fun getAll(): MutableIterable<User> {
 
@@ -21,6 +22,7 @@ class UserController {
 
     }
 
+    @CrossOrigin
     @GetMapping("/get")
     fun get(@RequestParam id: Long): User? {
 
@@ -28,6 +30,7 @@ class UserController {
 
     }
 
+    @CrossOrigin
     @PostMapping("/post")
     fun post(@RequestBody user: User): User {
 
@@ -36,6 +39,7 @@ class UserController {
 
     }
 
+    @CrossOrigin
     @DeleteMapping("/delete")
     fun delete(@RequestParam id: Long): User? {
 
